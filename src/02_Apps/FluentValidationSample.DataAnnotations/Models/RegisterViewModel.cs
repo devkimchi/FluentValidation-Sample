@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
-using FluentValidation.Attributes;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace FluentValidationSample.WebApp.Models
 {
