@@ -3,7 +3,7 @@ using FluentValidationSample.WebApp.Models;
 
 namespace FluentValidationSample.WebApp.Validators
 {
-    public class RegisterViewModelValidator : AbstractValidator<RegisterViewModel2>
+    public class RegisterViewModelValidator : AbstractValidator<RegisterViewModel>
     {
         public RegisterViewModelValidator()
         {

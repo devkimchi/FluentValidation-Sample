@@ -141,10 +141,10 @@ namespace FluentValidationSample.WebApp.Controllers
         }
 
         [NonAction]
-        partial void RegisterOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, FluentValidationSample.WebApp.Models.RegisterViewModel2 form);
+        partial void RegisterOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, FluentValidationSample.WebApp.Models.RegisterViewModel form);
 
         [NonAction]
-        public override System.Threading.Tasks.Task<System.Web.Mvc.ActionResult> Register(FluentValidationSample.WebApp.Models.RegisterViewModel2 form)
+        public override System.Threading.Tasks.Task<System.Web.Mvc.ActionResult> Register(FluentValidationSample.WebApp.Models.RegisterViewModel form)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Register);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "form", form);

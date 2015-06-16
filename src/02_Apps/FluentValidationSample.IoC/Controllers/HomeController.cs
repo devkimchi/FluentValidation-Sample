@@ -14,12 +14,12 @@ namespace FluentValidationSample.WebApp.Controllers
 
         public virtual async Task<ActionResult> Register()
         {
-            var vm = new RegisterViewModel2();
+            var vm = new RegisterViewModel();
             return View(vm);
         }
 
         [HttpPost]
-        public virtual async Task<ActionResult> Register(RegisterViewModel2 form)
+        public virtual async Task<ActionResult> Register(RegisterViewModel form)
         {
             var vm = form;
             if (ModelState.IsValid)
