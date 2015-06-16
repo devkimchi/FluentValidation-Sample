@@ -1,9 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using FluentValidation.Attributes;
+using FluentValidationSample.WebApp.Validators;
 
 namespace FluentValidationSample.WebApp.Models
 {
-    [Validator(typeof(RegisterViewModel))]
+    [Validator(typeof(RegisterViewModelValidator))]
     public class RegisterViewModel
     {
         [Display(Name = "Email")]
